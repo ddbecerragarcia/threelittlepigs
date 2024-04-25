@@ -7,9 +7,8 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
-  background('#C6E1AC');
-  fill(0);
   textFont(`Barriecito`);
+  background('#C6E1AC');
   textSize(20);
   text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
 }
@@ -17,7 +16,7 @@ function setup() {
 function draw() {
   image(img, 150, 85);
   fill(value);
-  textFont(`Barriecito`);
+  //textFont(`Barriecito`);
   textSize(20);
   // text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
 }
