@@ -7,6 +7,7 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  let a = createA('pagethree.html', 'Next Page');
   textFont(`Barriecito`);
   background('#C6E1AC');
   textSize(20);

@@ -9,6 +9,7 @@ var last = 0;
 
 function preload() {
   img = loadImage('wolf1.png');
+  let a = createA('pagetwo.html', 'Next Page');
 }
 
 function setup() {
@@ -16,7 +17,6 @@ function setup() {
   textSize(40);
   textAlign(CENTER, CENTER);
   textFont('Barriecito');
-  
 }
 
 function draw() {
@@ -40,3 +40,4 @@ function typeWriter() {
   image(img, 150, 85);
 
 }
+

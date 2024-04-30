@@ -11,6 +11,8 @@ function preload() {
 
 function setup() {
   createCanvas(600, 600);
+  let a = createA('pagefour.html', 'Next Page');
+
 }
 
 function draw() {
@@ -28,11 +30,6 @@ function typeWriter() {
 	
 	if (millis() > last + 200) {
 		index = index + 1;
-		//ONE WORD AT A TIME
-		// while(message.charAt(index) != ' ' &&
-		// 		 index < message.length){
-		// 	index = index + 1;
-		// }
 		last = millis();
 	}
   image(img, 150, 85);
