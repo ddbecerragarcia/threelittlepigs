@@ -4,11 +4,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  font: 'Barriecito';
+  font-family: "Barriecito", system-ui;
 }
 
 body {
   background-color: #C6E1AC;
+}
+
+h1 {
+  font-family: "Barriecito", system-ui;
+  color:#EE7179;
+  margin: auto;
 }
 canvas {
   display: block;
@@ -17,7 +23,15 @@ canvas {
 }
 
 a {
+  font-family: "Barriecito", system-ui;
   margin-left: 70rem;
   text-decoration: none;
-  color:'#EE7179';
+  color:#EE7179;
+}
+
+
+a:hover {
+  background-color: darkgreen;
+  color:azure;
+  transform: scale(1.5);
 }

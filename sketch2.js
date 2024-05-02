@@ -6,11 +6,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(800, 800);
   let a = createA('pagethree.html', 'Next Page');
   textFont(`Barriecito`);
   background('#C6E1AC');
   textSize(20);
+  fill('#EE7179');
   text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
 }
 

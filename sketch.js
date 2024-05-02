@@ -10,13 +10,15 @@ var last = 0;
 function preload() {
   img = loadImage('wolf1.png');
   let a = createA('pagetwo.html', 'Next Page');
+
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(800, 800);
   textSize(40);
   textAlign(CENTER, CENTER);
   textFont('Barriecito');
+  fill('#EE7179');
 }
 
 function draw() {

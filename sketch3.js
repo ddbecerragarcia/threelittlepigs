@@ -12,7 +12,6 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   let a = createA('pagefour.html', 'Next Page');
-
 }
 
 function draw() {
