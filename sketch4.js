@@ -52,7 +52,7 @@ function keyReleased(){
 }
 
 function click() {
-  let button = dist(mouseX, mouseY, img.x, img.y);
+  let button = dist(mouseX, mouseY, 550, 380);
   if (button <= 50) {
     imageMode(CENTER); 
     image(bubble, 550, 380);
