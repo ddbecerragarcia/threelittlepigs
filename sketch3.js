@@ -12,6 +12,7 @@ function preload() {
 function setup() {
   createCanvas(600, 600);
   let a = createA('pagefour.html', 'Next Page');
+  a.position(200,40);
 }
 
 function draw() {
@@ -31,7 +32,7 @@ function typeWriter() {
 		index = index + 1;
 		last = millis();
 	}
-  image(img, 150, 85);
+  image(img, 150, 40);
 
 }
 

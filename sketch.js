@@ -10,7 +10,7 @@ var last = 0;
 function preload() {
   img = loadImage('wolf1.png');
   let a = createA('pagetwo.html', 'Next Page');
-
+  a.position(200,40);
 }
 
 function setup() {
@@ -39,7 +39,7 @@ function typeWriter() {
 		// }
 		last = millis();
 	}
-  image(img, 150, 85);
+  image(img, 225, 110);
 
 }
 

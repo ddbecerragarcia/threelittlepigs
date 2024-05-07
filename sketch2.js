@@ -8,18 +8,19 @@ function preload() {
 function setup() {
   createCanvas(800, 800);
   let a = createA('pagethree.html', 'Next Page');
+  a.position(200,40);
   textFont(`Barriecito`);
   background('#C6E1AC');
-  textSize(20);
+  textSize(30);
   fill('#EE7179');
-  text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
+  text("I don’t know how this whole Big Bad Wolf thing got started,", 60, 288);
 }
 
 function draw() {
-  image(img, 150, 85);
+  image(img, 240, 50);
   fill(value);
   //textFont(`Barriecito`);
-  textSize(20);
+  textSize(40);
   // text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
 }
 
@@ -33,6 +34,6 @@ function keyTyped() {
   } else if (key === 'f') {
     value = 0;
   }
-  textSize(65);
-  text("but it’s all wrong.", 70, 350);
+  textSize(110);
+  text("but it’s all wrong.", 50, 380);
 }

@@ -14,6 +14,7 @@ function preload() {
   img2 = loadImage('sugar.png');
   bubble = loadImage('pig2.png');
   let a = createA('pagefive.html', 'Next Page');
+  a.position(200,40);
 }
 
 function draw() {
