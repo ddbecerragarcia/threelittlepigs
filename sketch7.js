@@ -38,7 +38,8 @@ function generateText(ratio, keyratio, totalWords) {
 
 function setup() {
   createCanvas(800, 800);
-  
+  let a = createA('about.html', 'About');
+  a.position(200,40);
   txt = generateText(ratio, keyratio, totalWords);
   
   data = [];

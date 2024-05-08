@@ -5,7 +5,7 @@ let cnv;
 
 function setup() {
   createCanvas(800, 800);
-  pos = createVector(random(0, 200), random(0, 200));
+  //pos = createVector(random(0, 200), random(0, 200));
 
 }
 
@@ -19,20 +19,22 @@ function preload() {
 
 function draw() {
   background('#C6E1AC');
-  texts();
+  text("X: "+mouseX, 0, height/4);
+  text("Y: "+mouseY, 0, height/2);
   fill('#EE7179');
+  texts();
   textFont(`Barriecito`);
   textSize(50);
-  text(contents, 550, 462, width-40, height-40);
+  text(contents, 530, 462, width-40, height-40);
   click();
 }
 
 function texts() {
   text("I ran out of sugar.", 30, 100);
-  text("So I walked down the street to", 130, 300);
-  text("ask my neighbor for a cup of sugar.", 20, 350 );
-  text("Now the neighbor was a", 30, 500);
-  image(img, 550, 380);
+  text("So I walked down the street to", 130, 250);
+  text("ask my neighbor for a cup of sugar.", 20, 300 );
+  text("Now the neighbor was a", 20, 500);
+  image(img, 660, 421);
   image(img2, 500, 0);
   }
 
@@ -53,11 +55,10 @@ function keyReleased(){
 }
 
 function click() {
-  let button = dist(mouseX, mouseY, 550, 380);
+  let button = dist(mouseX, mouseY, 672, 460);
   if (button <= 50) {
     imageMode(CENTER); 
-    image(bubble, 550, 380);
-    console.log("click!");
+    image(bubble, 700, 420);
   }
 
 }
