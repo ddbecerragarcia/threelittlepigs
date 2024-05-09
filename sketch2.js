@@ -1,8 +1,10 @@
 let value = 0;
 let img;
+let img2;
 
 function preload() {
   img = loadImage('wolf1.png');
+  img2 = loadImage('wolf3.png');
 }
 
 function setup() {
@@ -17,12 +19,12 @@ function setup() {
 }
 
 function draw() {
-  image(img, 240, 50);
   fill(value);
-  //textFont(`Barriecito`);
   textSize(40);
-  // text("I don’t know how this whole Big Bad Wolf thing got started,", 60,     288);
+  //image(img, 240, 20);
+  click();
 }
+
 
 function keyTyped() {
   if (key === 'w') {
@@ -36,4 +38,13 @@ function keyTyped() {
   }
   textSize(110);
   text("but it’s all wrong.", 50, 380);
+}
+
+function click() {
+  let button = dist(mouseX, mouseY, 387, 145);
+  if (button <= 50) {
+    imageMode(CENTER); 
+    image(img2, 387, 145);
+  }
+
 }

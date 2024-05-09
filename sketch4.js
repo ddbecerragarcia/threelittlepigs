@@ -11,7 +11,7 @@ function setup() {
 
 function preload() {
   img = loadImage('pig.png');
-  img2 = loadImage('sugar.png');
+  img2 = loadImage('sugar1.png');
   bubble = loadImage('pig2.png');
   let a = createA('pagefive.html', 'Next Page');
   a.position(200,40);
@@ -19,8 +19,6 @@ function preload() {
 
 function draw() {
   background('#C6E1AC');
-  text("X: "+mouseX, 0, height/4);
-  text("Y: "+mouseY, 0, height/2);
   fill('#EE7179');
   texts();
   textFont(`Barriecito`);
@@ -34,8 +32,6 @@ function texts() {
   text("So I walked down the street to", 130, 250);
   text("ask my neighbor for a cup of sugar.", 20, 300 );
   text("Now the neighbor was a", 20, 500);
-  image(img, 660, 421);
-  image(img2, 500, 0);
   }
 
 function keyTyped() {
@@ -59,6 +55,7 @@ function click() {
   if (button <= 50) {
     imageMode(CENTER); 
     image(bubble, 700, 420);
+    image(img2, 553, 68);
   }
 
 }
